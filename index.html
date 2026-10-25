@@ -3,18 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Café</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Escuela de niños creativos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Patrón Mostly-Fluid: Contenedor fluido con ancho máximo fijo */
+        .container {
+            width: 800px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .box {
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            color: #ffffff;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* Colores de las cajas */
+        .c1 { background-color: #e06d53; }
+        .c2 { background-color: #e59866; }
+        .c3 { background-color: #f39c12; }
+        .c4 { background-color: #5dade2; }
+        .c5 { background-color: #af7ac5; }
+
+        /* Media Query para Tabletas (más de 600px) */
+        @media (min-width: 600px) {
+            .c2, .c3, .c4, .c5 {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        /* Media Query para Escritorio (más de 800px) */
+        @media (min-width: 800px) {
+            .c1 { width: 100%; float: none; }
+            .c2 { width: 100%; float: none; }
+            .c3, .c4, .c5 { width: 33.33%; float: left; }
+        }
+    </style>
 </head>
 <body>
-    <div id="contenedor">
-        <h1>El café</h1>
-        <p>Energía de vida...</p>
-        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500" alt="Café" style="width: 100%; height: auto; border-radius: 8px;">
-        
-        <div id="resumen">
-            <p>Café de montaña o de selva? Descubre los mejores granos seleccionados para ti.</p>
-        </div>
+    <div class="container">
+        <h1>Escuela de niños creativos</h1>
+        <div class="c1 box">Crítica: Espacio para evaluar proyectos</div>
+        <div class="c2 box">Código: Desarrollo web base</div>
+        <div class="c3 box">Arte: Diseño gráfico infantil</div>
+        <div class="c4 box">Robótica: Primeros pasos</div>
+        <div class="c5 box">Aprende jugando: Lógica y diversión</div>
     </div>
 </body>
 </html>
